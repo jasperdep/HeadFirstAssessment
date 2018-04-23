@@ -13,7 +13,7 @@ public class Trein {
 
     public Nameable uitstappen(String name){
         if (!stoelen.containsKey(name)) {
-            System.out.println(name + " zit niet in de trein.");
+            System.out.println(name + " is uitgestapt.");
             return null;
         }
 

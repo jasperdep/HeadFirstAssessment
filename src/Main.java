@@ -25,8 +25,8 @@ public class Main {
         trein.instappen(Sjaak);
         trein.instappen(Jan);
 
-        Station Goes = new Station();
-        Goes.komtAan(trein);
+        /*Station Goes = new Station();
+        Goes.komtAan(trein);*/
 
         //Arnemuiden
         //Nieuwe wagon
@@ -36,28 +36,34 @@ public class Main {
         trein.instappen(Henk);
         trein.instappen(Klaas);
 
-        Station Arnemuiden = new Station();
-        Arnemuiden.komtAan(trein);
+        /*Station Arnemuiden = new Station();
+        Arnemuiden.komtAan(trein);*/
 
         //Tussen Arnemuiden en Middelburg
-        trein.uitstappen(Jan);
+        Nameable uitgestapte = trein.uitstappen("Henk");
 
         //Middelburg
-        trein.uitstappen(Shawn, Thomas, Jasper, Andries, Piet, Sjaak);
+        trein.uitstappen(" Shawn");
+        trein.uitstappen(" Thomas");
+        trein.uitstappen(" Jasper");
+        trein.uitstappen(" Andries");
+        trein.uitstappen(" Piet");
+        trein.uitstappen(" Sjaak");
 
-        Station Middelburg = new Station();
-        Middelburg.komtAan(trein);
+
+        /*Station Middelburg = new Station();
+        Middelburg.komtAan(trein);*/
 
         //Vlissingen-Souburg
 
-        Station VlissingenSouburg = new Station();
-        VlissingenSouburg.komtAan(trein);
+       /* Station VlissingenSouburg = new Station();
+        VlissingenSouburg.komtAan(trein);*/
 
         //Vlissingen
-        trein.uitstappen(Henk, Klaas);
+        trein.uitstappen("Henk");
 
-        Station Vlissingen = new Station();
-        Vlissingen.komtAan(trein);
+        /*Station Vlissingen = new Station();
+        Vlissingen.komtAan(trein);*/
 
     }
 
