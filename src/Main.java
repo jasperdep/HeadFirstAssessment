@@ -1,13 +1,57 @@
 public class Main {
 
-    //goes
-    TweedeKlas Shawn = new TweedeKlas("Shawn");
-    TweedeKlas Thomas = new TweedeKlas("Thomas");
-    TweedeKlas Jasper = new TweedeKlas("Jasper");
-    TweedeKlas Andries = new TweedeKlas("Andries");
-    TweedeKlas Piet = new TweedeKlas("Piet");
+    public static void main(String[] args) {
 
-    EersteKlas Sjaak = new EersteKlas("Sjaak");
+        Machinist machinist = new Machinist("Peter");
 
-    Zwartrijder Jan = new Zwartrijder("Jan");
+        Trein trein = new Trein(machinist);
+
+        //Goes
+        TweedeKlas Shawn = new TweedeKlas("Shawn");
+        TweedeKlas Thomas = new TweedeKlas("Thomas");
+        TweedeKlas Jasper = new TweedeKlas("Jasper");
+        TweedeKlas Andries = new TweedeKlas("Andries");
+        TweedeKlas Piet = new TweedeKlas("Piet");
+
+        EersteKlas Sjaak = new EersteKlas("Sjaak");
+
+        Zwartrijder Jan = new Zwartrijder("Jan");
+
+        trein.instappen(Shawn, Thomas, Jasper, Andries, Piet, Sjaak, Jan);
+
+        Station Goes = new Station();
+        Goes.komtAan(trein);
+
+        //Arnemuiden
+        //Nieuwe wagon
+        TweedeKlas Henk = new TweedeKlas("Henk");
+        TweedeKlas Klaas = new TweedeKlas("Klaas");
+
+        trein.instappen(Henk, Klaas);
+
+        Station Arnemuiden = new Station();
+        Arnemuiden.komtAan(trein);
+
+        //Tussen Arnemuiden en Middelburg
+        trein.uitstappen(Jan);
+
+        //Middelburg
+        trein.uitstappen(Shawn, Thomas, Jasper, Andries, Piet, Sjaak);
+
+        Station Middelburg = new Station();
+        Middelburg.komtAan(trein);
+
+        //Vlissingen-Souburg
+
+        Station VlissingenSouburg = new Station();
+        VlissingenSouburg.komtAan(trein);
+
+        //Vlissingen
+        trein.uitstappen(Henk, Klaas);
+
+        Station Vlissingen = new Station();
+        Vlissingen.komtAan(trein);
+
+    }
+
 }

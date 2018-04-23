@@ -1,4 +1,4 @@
-public class Reiziger {
+public class Reiziger implements Nameable {
 
     private String name;
 
