@@ -10,15 +10,6 @@ public class Trein {
         this.machinist = machinist;
     }
 
-    public void instappen(Nameable nameable1, Nameable nameable2, Nameable nameable3, Nameable nameable4, Nameable nameable5, Nameable nameable6, Nameable nameable7){
-        instappen(nameable1);
-        instappen(nameable2);
-        instappen(nameable3);
-        instappen(nameable4);
-        instappen(nameable5);
-        instappen(nameable6);
-        instappen(nameable7);
-    }
 
     public Nameable uitstappen(String name){
         if (!stoelen.containsKey(name)) {
@@ -72,6 +63,10 @@ public class Trein {
             String key = entry.getKey();
             System.out.println("- "+key);
         }
+    }
+
+    public void info(){
+        System.out.println(this);
     }
 
 }

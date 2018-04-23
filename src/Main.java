@@ -17,7 +17,13 @@ public class Main {
 
         Zwartrijder Jan = new Zwartrijder("Jan");
 
-        trein.instappen(Shawn, Thomas, Jasper, Andries, Piet, Sjaak, Jan);
+        trein.instappen(Shawn);
+        trein.instappen(Thomas);
+        trein.instappen(Jasper);
+        trein.instappen(Andries);
+        trein.instappen(Piet);
+        trein.instappen(Sjaak);
+        trein.instappen(Jan);
 
         Station Goes = new Station();
         Goes.komtAan(trein);
@@ -27,7 +33,8 @@ public class Main {
         TweedeKlas Henk = new TweedeKlas("Henk");
         TweedeKlas Klaas = new TweedeKlas("Klaas");
 
-        trein.instappen(Henk, Klaas);
+        trein.instappen(Henk);
+        trein.instappen(Klaas);
 
         Station Arnemuiden = new Station();
         Arnemuiden.komtAan(trein);
